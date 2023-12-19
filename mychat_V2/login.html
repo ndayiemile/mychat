@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>db livesearch</title>
+    <style>
+        form{
+            width: fit-content;
+            border-radius: 20px;
+            padding: 10px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(18, 218, 208);
+        }
+        h2{
+            text-align: center;
+        }
+        form .div{
+            margin-top: 10px;
+            padding: 5px;
+            width: 100%;
+        }
+        form input[type=submit]{
+            width:200px;
+            background-color:rgb(18, 218, 208);
+            color:black;
+            border-style: none;
+            border-width: 0px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        form input{
+            width:400px;
+            border-style: solid;
+            border-color: rgb(124, 248, 242);
+            padding: 5px;
+            border-radius: 2px;
+            padding-left: 10px;
+            border-width: 2px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        form input[type=text]{
+            margin-bottom: 5px;
+        }
+      
+    </style>
+</head>
+<body>
+    <form action="accounts.php" method="POST">
+        <div class="div">
+            <h2>chatapp login</h2>
+        </div>
+        <div  class="search_div">
+            <input type="text" id="name" name="email" placeholder="Phone or email" required>
+        </div>
+        <div class="div">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="div">
+            <input type="submit" value="login" name="login">
+        </div>
+    </form>
+   </body>
+</html>

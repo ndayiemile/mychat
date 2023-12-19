@@ -1,0 +1,88 @@
+<?php include "accounts.php"?>
+<?php include "errors.php" ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>db livesearch</title>
+    <style>
+        form{
+            width: fit-content;
+            border-radius: 20px;
+            padding: 10px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(18, 218, 208);
+        }
+        h2{
+            text-align: center;
+        }
+        form .div{
+            margin-top: 10px;
+            padding: 5px;
+            width: 100%;
+        }
+        form input[type=submit]{
+            width:200px;
+            background-color:rgb(18, 218, 208);
+            color:black;
+            border-style: none;
+            border-width: 0px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        form input{
+            width:400px;
+            border-style: solid;
+            border-color: rgb(124, 248, 242);
+            padding: 5px;
+            border-radius: 5px;
+            padding-left: 10px;
+            border-width: 2px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        form input[type=text]{
+            margin-bottom: 5px;
+            <?php echo $borderColor_sinup ?>
+        }
+      
+    </style>
+    <script>
+        function validator(){
+            var password = document.forms["sinupForm"]["password_1"].value;
+            var passwordConfirm = document.forms["sinupForm"]["password_2"].value;
+
+            if(password != passwordConfirm){
+                alert("passwords do not match");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <form name="sinupForm" action="sinup.php" method="POST" onsubmit="return validator()">
+        <div class="div">
+            <h2>chatapp sinup</h2>
+        </div>
+        <div  class="div">
+            <input type="text" id="name" name="name"  <?php echo $placeholder_sinup ?> required>
+        </div>
+        <div  class="div">
+            <input type="email" id="email" name="email" value="<?php echo $email?>" placeholder="Type your email" required>
+        </div>
+        <div class="div">
+            <input type="password" name="password_1" value="<?php echo $password?>" placeholder="Password" required>
+        </div>
+        <div class="div">
+            <input type="password" name="password_2" value="<?php echo $password?>" placeholder="Confirm Password" required>
+        </div>
+        <div class="div">
+            <input type="submit" value="sinup" name="sinup">
+        </div>
+    </form>
+   </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid chat</title>
+    <style>
+        *{box-sizing: border-box;}
+        body,html{
+            padding: 0;
+            margin: 0;
+        }
+        #container{
+            display: flex;
+            position: fixed;
+            flex-flow: column;
+            height: 100%;
+            width: 100%;
+        }
+        #container-head{
+            flex-grow: 1;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+        }
+        #navbar{
+            width:50%;
+            background-color: rgb(133, 100, 148);
+        }
+        #container-body{
+            padding: 10px;
+            flex-grow: 8;
+            background-color: chocolate;
+            display: flex;
+            flex-flow: row;
+        }
+        #middle-section{
+            flex-grow: 2;
+            background-color: darkgoldenrod;
+            display: flex;
+            flex-flow: column;
+        }
+        #middle-section-header{
+            flex-grow: 3;
+            background-color: greenyellow;
+        }
+        #middle-section-body{
+            flex-grow: 26;
+            background-color: rgb(35, 44, 21);
+        }
+        #right-section{
+            flex-grow: 1;
+            background-color: darkseagreen;
+            display: flex;
+            flex-flow: column;
+        }
+        #right-section-header{
+            flex-grow: 3;
+            background-color: rgb(17, 179, 219);
+        }
+        #right-section-body{
+            flex-grow: 26;
+            background-color: rgb(43, 29, 8);
+        }
+        #left-section{
+            flex-grow: 1;
+            background-color: cornflowerblue;
+            display: flex;
+            flex-flow: column;
+        }
+        #left-section-top{
+            background-color: darkslategray;
+            flex: 1;
+            display: flex;
+            flex-flow: column;
+        }
+        #left-section-top-header,#left-section-bottom-header{
+            flex-grow: 2;
+            background-color: firebrick;
+        }
+        #left-section-top-body,#left-section-bottom-body{
+            flex-grow: 7;
+            background-color: rgb(68, 67, 67);
+        }
+        #left-section-bottom{
+            background-color: rgb(13, 175, 21);
+            flex: 1;
+            display: flex;
+            flex-flow: column;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="container-head">
+            <div id="navbar">
+                g
+            </div>
+        </div>
+        <div id="container-body">
+            <div id="left-section">
+                <div id="left-section-top">
+                    <div id="left-section-top-header">
+                        a
+                    </div>
+                    <div id="left-section-top-body">
+                        b
+                    </div>
+                </div>
+                <div id="left-section-bottom">
+                    <div id="left-section-bottom-header">
+                        c
+                    </div>
+                    <div id="left-section-bottom-body">
+                        d
+                    </div>
+                </div>
+            </div>
+            <div id="middle-section">
+                <div id="middle-section-header">
+                    e
+                </div>
+                <div id="middle-section-body">
+                    h
+                </div>
+            </div>
+            <div id="right-section">
+                <div id="right-section-header">
+                    i
+                </div>
+                <div id="right-section-body">
+                    j
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

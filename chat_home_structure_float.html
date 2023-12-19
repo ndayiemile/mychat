@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid chat</title>
+    <style>
+        *{box-sizing: border-box;}
+        body,html{
+            padding: 0;
+            margin: 0;
+        }
+        #container{
+            display: flex;
+            position: fixed;
+            flex-flow: column;
+            height: 100%;
+            width: 100%;
+        }
+        #container-head{
+            flex-grow: 1;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+        }
+        #navbar{
+            width:50%;
+            background-color: rgb(133, 100, 148);
+        }
+        #container-body{
+            padding: 10px;
+            flex-grow: 8;
+            background-color: chocolate;
+        }
+        #middle-section{
+            float:left;
+            width:50%;
+            height:100%;
+            background-color: darkgoldenrod;
+        }
+        #right-section{
+            float:left;
+            width:25%;
+            height:100%;
+            background-color: darkseagreen;
+        }
+        #middle-section-header,#right-section-header{
+            float:left;
+            width:100%;
+            height:10%;
+            background-color: rgb(17, 179, 219);
+        }
+        #middle-section-body,#right-section-body{
+            float:left;
+            width:100%;
+            height:90%;
+            background-color: rgb(43, 29, 8);
+        }
+        #left-section{
+            float:left;
+            width:25%;
+            height:100%;
+            background-color: cornflowerblue;
+        }
+        #left-section-top{
+            background-color: darkslategray;
+            float:left;
+            width:100%;
+            height:50%;
+        }
+        #left-section-top-header,#left-section-bottom-header{
+            float:left;
+            width:100%;
+            height:20%;
+            background-color: firebrick;
+        }
+        #left-section-top-body,#left-section-bottom-body{
+            float:left;
+            width:100%;
+            height:80%;
+            background-color: rgb(68, 67, 67);
+        }
+        #left-section-bottom{
+            background-color: rgb(13, 175, 21);
+            float:left;
+            width:100%;
+            height:50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="container-head">
+            <div id="navbar">
+                g
+            </div>
+        </div>
+        <div id="container-body">
+            <div id="left-section">
+                <div id="left-section-top">
+                    <div id="left-section-top-header">
+                        i
+                    </div>
+                    <div id="left-section-top-body">
+                        h
+                    </div>
+                </div>
+                <div id="left-section-bottom">
+                    <div id="left-section-bottom-header">
+                    g
+                    </div>
+                    <div id="left-section-bottom-body">
+                        f
+                    </div>
+                </div>
+            </div>
+            <div id="middle-section">
+                <div id="middle-section-header">
+                    e
+                </div>
+                <div id="middle-section-body">
+                    d
+                </div>
+            </div>
+            <div id="right-section">
+                <div id="right-section-header">
+                b
+
+                </div>
+                <div id="right-section-body">
+                a
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
